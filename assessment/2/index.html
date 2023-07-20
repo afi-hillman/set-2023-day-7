@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Assessment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="section">
+      <div class="container">
+        <div class="panel"><p></p></div>
+        <div class="button-group">
+          <div class="row">
+            <button onclick="clearDisplay()" class="button-upper">AC</button>
+            <button onclick="clickValue('L')" class="button-upper">L</button>
+            <button onclick="clickValue('L')" class="button-upper">L</button>
+            <button onclick="clickOp('/')" class="button-op">/</button>
+          </div>
+          <div class="row">
+            <button onclick="clickValue(7)">7</button>
+            <button onclick="clickValue(8)">8</button>
+            <button onclick="clickValue(9)">9</button>
+            <button onclick="clickOp('x')" class="button-op">x</button>
+          </div>
+          <div class="row">
+            <button onclick="clickValue(4)">4</button>
+            <button onclick="clickValue(5)">5</button>
+            <button onclick="clickValue(6)">6</button>
+            <button onclick="clickOp('-')" class="button-op">-</button>
+          </div>
+          <div class="row">
+            <button onclick="clickValue(1)">1</button>
+            <button onclick="clickValue(2)">2</button>
+            <button onclick="clickValue(3)">3</button>
+            <button onclick="clickOp('+')" class="button-op">+</button>
+          </div>
+          <div class="row">
+            <button onclick="clickValue(0)" id="zeroButton"><p>0</p></button>
+            <button onclick="clickValue('.')">.</button>
+            <button onclick="calculate()" class="button-op">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
